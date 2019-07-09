@@ -8,4 +8,5 @@ This is all done to try to help people learn about the pitfalls of different Mac
 For the exercises to work, make sure you have a 64 bit of python 3.7 installed, and then install the requirements with pip. 
 
 Thanks for stopping by,
+
 Jankh.
