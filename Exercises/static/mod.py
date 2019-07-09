@@ -23,6 +23,6 @@ for filename in os.listdir("."):
 					if(val + 50 > 255):
 						val = 255
 					#Add 50 to the red pixel (array index [1] in the 3rd dimension)
-					image[i][j][1] =+ val
+					image[i][j][1] = val
 			#Save the modified image
 			scipy.misc.toimage(image, cmin=0.0, cmax=255).save(filename)
