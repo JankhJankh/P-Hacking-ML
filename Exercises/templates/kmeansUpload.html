@@ -1,0 +1,22 @@
+<doctype html>
+<title>Python Flask File Upload Example</title>
+<a href="/">Home</a>
+<a href="/kmeans">Back to dataset</a>
+
+<h2>Select file(s) to upload</h2>
+<p>
+	{% with messages = get_flashed_messages() %}
+	  {% if messages %}
+		<ul class=flashes>
+		{% for message in messages %}
+		  <li>{{ message }}</li>
+		{% endfor %}
+		</ul>
+	  {% endif %}
+	{% endwith %}
+</p>
+<form method="post" action="/kmeansupload" enctype="multipart/form-data">
+<input type="file" name="file" multiple="" required>
+<br>
+<input type="submit" value="Submit">
+</form>

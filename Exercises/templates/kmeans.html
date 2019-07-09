@@ -1,0 +1,17 @@
+<doctype html>
+<title>AI CTF</title>
+<a href="/">Home</a>
+<a href="/kmeansupload">Upload a file</a>
+<form method="post" action="/kmeans" enctype="multipart/form-data">
+	<input type="submit" value="Clear Images">
+</form>
+<form method="post" action="/runkmeans" enctype="multipart/form-data">
+	<input type="submit" value="Cluster current dataset">
+</form>
+
+<h1>List of Images</h1>
+{% if files %}
+    {% for name in files %}
+       <img src="{{url_for('static', filename=name)}}" alt="{{name}}"  width="100" height="100">
+    {% endfor %}
+{% endif %}

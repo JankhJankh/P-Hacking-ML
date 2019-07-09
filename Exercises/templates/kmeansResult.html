@@ -1,0 +1,35 @@
+<doctype html>
+<title>Clustered Images</title>
+<a href="/">Home</a>
+<a href="/kmeans.html">Back to dataset</a>
+<p> If you P-Hacked the clusters, the flag will appear here: </p>
+{% if flag %}
+ <p>{{flag}}<p>
+{% endif %}
+{% if class1 %}
+<h1>Cluster 1</h1>
+<p>Dogs: {{scores[0]}}</p>
+<p>Cars: {{scores[1]}}</p>
+<p>Ships: {{scores[2]}}</p>
+    {% for name in class1 %}
+       <img src="{{url_for('static', filename=name)}}" alt="{{name}}" width="100" height="100">
+    {% endfor %}
+{% endif %}
+{% if class2 %}
+<h1>Cluster 2</h1>
+<p>Dogs: {{scores[3]}}</p>
+<p>Cars: {{scores[4]}}</p>
+<p>Ships: {{scores[5]}}</p>
+    {% for name in class2 %}
+       <img src="{{url_for('static', filename=name)}}" alt="{{name}}"  width="100" height="100">
+    {% endfor %}
+{% endif %}
+{% if class3 %}
+<h1>Cluster 3</h1>
+<p>Dogs: {{scores[6]}}</p>
+<p>Cars: {{scores[7]}}</p>
+<p>Ships: {{scores[8]}}</p>
+    {% for name in class3 %}
+       <img src="{{url_for('static', filename=name)}}" alt="{{name}}" width="100" height="100">
+    {% endfor %}
+{% endif %}

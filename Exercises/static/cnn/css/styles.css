@@ -1,0 +1,43 @@
+body{
+    background-image: url("../img/paws.png");
+    background-repeat: repeat-y repeat-x space;
+	background-size: 200px;
+}
+
+.title-bar {
+	color: white;
+	background: #2e2887;
+	border: 7px solid white;
+	text-align: center;
+	text-shadow: 2px 2px 4px #000000;
+	box-shadow: 2px 2px 4px #000000;
+	font-size: 50px;
+}
+
+.top50 { margin-top:50px; }
+.top30 { margin-top:30px; }
+
+.opening-text {
+	text-shadow: 1px 1px 2px #000000;
+	font-size: 25px;
+    margin: auto;
+    width: 50%;
+	background-color:rgba(255, 243, 86, 1);
+	box-shadow: 0 0 10px 10px #fff356;
+}
+
+.opening-text h2{
+	text-align: center;
+}
+
+
+.dressme{
+	font-size: 18px;
+	border: 5px solid #6e7887;
+	padding: 20px;
+	background-color: rgb(255, 255, 255, .8);
+}
+
+a {
+	font-size: 20px;
+}
